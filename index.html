@@ -4,22 +4,22 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="color-scheme" content="light">
-  <title>包装视觉卡片分类</title>
+  <title>包装卡片分类</title>
   <link rel="stylesheet" href="style.css">
   <script defer src="samples.js"></script>
   <script defer src="sort.js"></script>
 </head>
 <body>
   <header class="topbar">
-    <div class="brandmark">W / 视觉研究</div>
-    <span class="topnote">40 张包装卡 · 自由分类</span>
+    <div class="brandmark">卡片分类研究</div>
+    <span class="topnote">40 张包装卡 · 自由分组</span>
   </header>
   <main class="shell">
     <div class="intro">
       <div>
-        <p class="eyebrow">包装视觉分类</p>
-        <h1>把看起来相近的包装放在一起</h1>
-        <p class="lead">请依据包装的整体视觉印象分类，例如瓶形、颜色、图案和文字编排。包装上的文字保留；不需要判断品牌归属、价格或口味。请将40张卡分为<strong>6–12组</strong>，每张卡只能放入一组；<strong>单张卡也可以独立成组</strong>。</p>
+        <p class="eyebrow">卡片分类</p>
+        <h1>请将包装卡片自由分组</h1>
+        <p class="lead">请按照自己的判断，将40张卡分为<strong>6–12组</strong>。没有预设的分类标准；每张卡只能放入一组，<strong>单张卡也可以独立成组</strong>。</p>
       </div>
       <div class="study-id"><label for="participant">你的作答编号</label><input id="participant" maxlength="32" autocomplete="off" spellcheck="false"><small>无需填写姓名；完成后把结果文件保存到研究者指定位置并交给研究者。</small></div>
     </div>
@@ -42,13 +42,13 @@
       </section>
       <section class="groups-panel" aria-labelledby="groups-heading">
         <div class="section-head"><div><span class="overline">你的分类</span><h2 id="groups-heading">分组 <span id="group-count"></span></h2></div><span id="selected-count" class="selection-count">未选卡片</span></div>
-        <p class="microcopy">完成时需有6–12个有卡片的分组，单张卡可独立成组。每组可自行命名，如“红金礼盒”。</p>
+        <p class="microcopy">完成时需有6–12个有卡片的分组，单张卡可独立成组。每组可自行命名。</p>
         <div id="groups" class="groups"></div>
         <button id="new-group-bottom" type="button" class="add-group">＋ 再建一组</button>
       </section>
     </div>
   </main>
-  <dialog id="preview" class="preview-dialog"><div class="dialog-head"><strong id="preview-code"></strong><button type="button" id="close-preview" aria-label="关闭预览">×</button></div><div class="visual-frame preview-frame"><img id="preview-image" alt="包装卡片放大图"></div><p>包装图仅供视觉分类。返回卡片区选择或调整分组。</p></dialog>
+  <dialog id="preview" class="preview-dialog"><div class="dialog-head"><strong id="preview-code"></strong><button type="button" id="close-preview" aria-label="关闭预览">×</button></div><div class="visual-frame preview-frame"><img id="preview-image" alt="包装卡片放大图"></div><p>可返回卡片区选择或调整分组。</p></dialog>
   <div id="quick-bar" class="quick-bar" hidden><strong id="quick-selected">已选 0 张</strong><select id="quick-group" aria-label="选择目标分组"></select><button id="quick-assign" type="button" class="primary">归入分组</button></div>
   <footer>本页仅在浏览器中处理分类，结果不会自动上传。离开页面前请下载 JSON 文件并交给研究者。</footer>
 </body>
